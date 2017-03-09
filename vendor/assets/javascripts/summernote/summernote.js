@@ -4313,7 +4313,7 @@
     this.createLink = this.wrapCommand(function (linkInfo) {
       var linkUrl = linkInfo.url;
       var linkText = linkInfo.text;
-      var isNewWindow = linkInfo.isNewWindow;
+      var isNewWindow = true;
       var rng = linkInfo.range || this.createRange();
       var isTextChanged = rng.toString() !== linkText;
 
